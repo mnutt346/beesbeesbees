@@ -6,7 +6,7 @@ var RetiredForagerBee = function() {
     this.color = 'grey';
 };
 
-RetiredForagerBee.prototype = new ForagerBee();
+RetiredForagerBee.prototype = Object.create(ForagerBee.prototype);
 
 RetiredForagerBee.prototype.constructor = RetiredForagerBee;
 
